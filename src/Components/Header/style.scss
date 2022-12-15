@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+.header{
+    height: 100vh;
+    background: url(../../../public/img/back.png) 100% 0/cover no-repeat;
+    padding: 0 20px;
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 1030px;
+        height: 200px;
+        a {
+            font-family: 'Quicksand';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 107%;
+            /* identical to box height, or 26px */
+            text-decoration: none;
+            letter-spacing: 0.04em;
+
+            color: #FFFFFF;
+        }
+    }
+
+
+
+    &__body{
+        height: 70vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        max-width: 1030px;
+        margin: 0 auto;
+        h1 {
+            max-width: 770px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 96px;
+            line-height: 116px;
+
+            color: #FFFFFF;
+        }
+    }
+
+    @media(max-width: 800px) {
+        a {
+            font-size: 18px;
+            
+        }
+        h1 {
+            font-size: 46px;
+            max-width: 460px;
+        }
+    }
+
+    @media(max-width: 450px) {
+        &__nav{
+            height: 100px;
+            a {
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
